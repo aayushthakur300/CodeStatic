@@ -83,16 +83,19 @@ MODEL_ROSTER = [
     'models/gemini-flash-lite-latest',
     'models/gemini-2.5-flash',
     'models/gemini-2.5-flash-lite',
+    'models/gemini-robotics-er-1.5-preview',
 
     # --- TIER 2: NEXT GEN (2.5) ---
     'models/gemini-2.5-flash-preview-09-2025',
     'models/gemini-2.5-flash-lite-preview-09-2025',
+    'models/gemini-2.5-flash-tts',
 
     # --- TIER 3: HIGH INTELLIGENCE PRO MODELS ---
     'models/gemini-2.5-pro',
     'models/gemini-pro-latest',
     'models/gemini-3-pro-preview',
     'models/deep-research-pro-preview-12-2025',
+
 
     # --- TIER 4: LIGHTWEIGHT / PREVIEW ---
     'models/gemini-2.0-flash-lite',
@@ -113,6 +116,7 @@ MODEL_ROSTER = [
     'models/gemma-3n-e2b-it',
 
     # --- TIER 7: OBSCURE PREVIEWS (LAST RESORT) ---
+    'models/gemini-2.5-flash-native-audio-dialog',
     'models/nano-banana-pro-preview' 
 ]
 
