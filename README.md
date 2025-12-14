@@ -2,7 +2,7 @@
 
 **Production-grade AI system for static code analysis, automated correction, and interview-level evaluation.**
 
-🔗 **Live Demo:** [https://codestatic-tft0.onrender.com](https://codestatic-tft0.onrender.com)
+🔗 **Live Demo:** [https://codestatic.onrender.com](https://codestatic.onrender.com)
 
 CodeStatic is a **full-stack AI-powered code assessment platform** designed to mirror **real technical interview and senior-level code review workflows** .
 
