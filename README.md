@@ -19,6 +19,7 @@ It performs deep static analysis, identifies and explains errors, auto-corrects 
 ✔ Mirrors real interview evaluation pipelines
 ✔ Clean, modular, production-minded architecture
 ✔ Practical AI system design (not prompt wrappers)
+✔ **High-Performance Async Backend (FastAPI + Uvicorn)**
 
 ---
 
@@ -101,23 +102,24 @@ script.js    → Editor logic & API orchestration
 
 ### Stack
 
-* Python (Flask)
-* Google Gemini API (multi-model fallback)
-* SQLite (thread-safe persistence)
-* FPDF2 (professional report generation)
+* **Python (FastAPI)** — Modern, high-performance async framework
+* **Uvicorn** — ASGI Server implementation
+* **Google Gemini API** — Multi-model intelligent fallback
+* **SQLite** — Thread-safe persistence
+* **FPDF2** — Professional report generation engine
 
 ### Responsibilities
 
-* AI orchestration with intelligent model fallback
-* Secure REST API handling
+* Async AI orchestration with intelligent model fallback
+* Type-safe REST API handling (Pydantic validation)
 * Persistent project & chat storage
 * PDF report generation
-* Static asset & template serving
+* Static asset & template serving (Jinja2)
 
 ### Key File
 
 ```
-app.py → Complete backend (AI + DB + APIs + PDF engine)
+run.py → Complete backend (AI + DB + APIs + PDF engine)
 ```
 
 ---
@@ -174,13 +176,13 @@ GEMINI_API_KEY=your_api_key_here
 ### 4️⃣ Run Locally
 
 ```
-python app.py
+uvicorn run:app --reload
 ```
 
 Open:
 
 ```
-http://localhost:5000
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
 ```
 
 ---
