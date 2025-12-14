@@ -2,18 +2,21 @@
 
 **Production-grade AI system for static code analysis, automated correction, and interview-level evaluation.**
 
-CodeStatic is a **full-stack AI-powered code assessment platform** designed to mirror **real technical interview and code review workflows** used in top-tier technology companies.
+🔗 **Live Demo:** [https://codestatic-tft0.onrender.com](https://codestatic-tft0.onrender.com)
+
+CodeStatic is a **full-stack AI-powered code assessment platform** designed to mirror **real technical interview and senior-level code review workflows** used in FAANG and top product companies.
+
 It performs deep static analysis, identifies and explains errors, auto-corrects code, evaluates quality and integrity, detects plagiarism signals, and generates professional reports — all within a single, scalable system.
 
 ---
 
 ## 🧠 Why This Project Stands Out (Recruiter View)
 
-✔ Solves a real engineering problem, not a demo use-case
-✔ Complete end-to-end ownership (UI → API → AI → DB → Reporting)
-✔ Mirrors actual interview evaluation pipelines
-✔ Clean, modular, and scalable architecture
-✔ Demonstrates practical AI integration, not prompt wrappers
+✔ Solves a real engineering problem (not a demo or CRUD app)
+✔ End-to-end ownership: UI → API → AI → DB → Reporting
+✔ Mirrors real interview evaluation pipelines
+✔ Clean, modular, production-minded architecture
+✔ Practical AI system design (not prompt wrappers)
 
 ---
 
@@ -22,7 +25,7 @@ It performs deep static analysis, identifies and explains errors, auto-corrects 
 ### 🔍 Static Code Analysis Engine
 
 * Syntax, logical, runtime, and edge-case detection
-* Line-level error pinpointing with clear explanations
+* Line-level error pinpointing with explanations
 * Automatic programming language mismatch detection
 
 ### 🛠️ Automated Code Fixing & Standardization
@@ -34,21 +37,21 @@ It performs deep static analysis, identifies and explains errors, auto-corrects 
 ### 📊 Quality, Compliance & Integrity Checks
 
 * Code Quality Score (0–100)
-* Time and Space Complexity analysis
-* Compliance validation against best practices
-* Plagiarism risk indicators
+* Time & Space Complexity analysis
+* Best-practice compliance validation
+* Plagiarism and AI-generation risk indicators
 
 ### 🧠 Context-Aware AI Code Assistant
 
-* Conversational AI tied directly to the current code context
-* Persistent chat history stored in database
-* Functions like a real technical interview mentor
+* Conversational AI bound to current code context
+* Persistent chat history (DB-backed)
+* Functions like a real interview mentor
 
 ### 🗂️ Project & Session Management
 
 * Save, load, favorite, and delete projects
 * SQLite-backed persistent storage
-* Resume work seamlessly across sessions
+* Resume work across sessions
 
 ### 📄 Professional PDF Evaluation Reports
 
@@ -76,9 +79,9 @@ It performs deep static analysis, identifies and explains errors, auto-corrects 
 
 * Split-screen editor (submission vs analysis)
 * Synchronized line numbers
-* Dark / Light mode support
-* Resizable panels (desktop-grade UI)
-* Real-time loading and processing states
+* Dark / Light mode
+* Resizable panels (desktop-grade UX)
+* Real-time loading & evaluation states
 * Interview-style evaluation dashboard
 
 ### Key Files
@@ -87,7 +90,7 @@ It performs deep static analysis, identifies and explains errors, auto-corrects 
 index.html   → Product landing page
 tool.html    → Core assessment interface
 style.css    → Custom theming & animations
-script.js    → Editor logic, API orchestration
+script.js    → Editor logic & API orchestration
 ```
 
 ---
@@ -97,22 +100,22 @@ script.js    → Editor logic, API orchestration
 ### Stack
 
 * Python (Flask)
-* Google Gemini API (multi-model fallback strategy)
+* Google Gemini API (multi-model fallback)
 * SQLite (thread-safe persistence)
-* FPDF2 (report generation)
+* FPDF2 (professional report generation)
 
 ### Responsibilities
 
 * AI orchestration with intelligent model fallback
 * Secure REST API handling
-* Persistent project and chat storage
-* Professional PDF report generation
-* Static asset and template serving
+* Persistent project & chat storage
+* PDF report generation
+* Static asset & template serving
 
 ### Key File
 
 ```
-app.py → Complete backend (AI, DB, APIs, PDF engine)
+app.py → Complete backend (AI + DB + APIs + PDF engine)
 ```
 
 ---
@@ -183,19 +186,19 @@ http://localhost:5000
 ## 🧪 What Interviewers Notice Immediately
 
 ✅ Strong system design thinking
-✅ Real-world AI application (not a wrapper)
-✅ Production-ready UI and backend
-✅ Clean data flow and persistence
-✅ Clear problem-solution alignment
+✅ Real-world AI application (not wrappers)
+✅ Production-ready frontend & backend
+✅ Clean data flow & persistence
+✅ Clear problem–solution alignment
 
-This project demonstrates **how modern engineers build AI-driven products**, not just how they call APIs.
+This project demonstrates **how modern engineers build AI-driven systems**, not just how they call APIs.
 
 ---
 
 ## 🏁 Final Note
 
 CodeStatic is **not a tutorial project**.
-It is a **portfolio-grade engineering system** built to reflect real hiring and evaluation standards.
+It is a **portfolio-grade engineering system** aligned with real hiring standards.
 
 > “This is the kind of project that drives deep technical discussion in interviews.”
 
@@ -208,4 +211,4 @@ Full-Stack Engineer | AI-Focused Systems
 
 ---
 
-⭐ If this repository added value or impressed you, consider starring it.
+⭐ If this repository impressed you or added value, consider starring it.
