@@ -6,6 +6,8 @@
 
 CodeStatic is a **full-stack AI-powered code assessment platform** designed to mirror **real technical interview and senior-level code review workflows** .
 
+
+
 It performs deep static analysis, identifies and explains errors, auto-corrects code, evaluates quality and integrity, detects plagiarism signals, and generates professional reports — all within a single, scalable system.
 
 ---
