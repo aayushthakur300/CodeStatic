@@ -1212,3 +1212,128 @@ body.light-mode .panel-footer {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(33, 150, 243, 0.5);
 }
+
+/* -------------------------
+       THEME VARIABLES
+    ------------------------- */
+    :root {
+        --bg-dark: #050505;
+        --accent: #ef4444; /* Danger Red */
+        --accent-glow: rgba(239, 68, 68, 0.6);
+        --text-main: #ffffff;
+        --text-muted: #e2e8f0;
+        --panel-bg: rgba(15, 15, 20, 0.6);
+        --border-color: rgba(239, 68, 68, 0.1);
+        --footer-bg: rgba(0, 0, 0, 0.9);
+    }
+
+    /* LIGHT MODE OVERRIDES */
+    body.light-mode {
+        --bg-dark: #f0f4f8;
+        --accent: #dc2626;
+        --accent-glow: rgba(220, 38, 38, 0.3);
+        --text-main: #111827;
+        --text-muted: #374151;
+        --panel-bg: #ffffff;
+        --border-color: rgba(220, 38, 38, 0.2);
+        --footer-bg: rgba(255, 255, 255, 0.95);
+    }
+
+    /* -------------------------
+       BASE STYLES
+    ------------------------- */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--bg-dark);
+        color: var(--text-main);
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden; /* Critical for mobile to prevent side-scroll */
+        transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    /* DANGER GRID BACKGROUND */
+    .danger-grid {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-image:
+            linear-gradient(var(--border-color) 1px, transparent 1px),
+            linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+        background-size: 40px 40px;
+        z-index: -1;
+        mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+        pointer-events: none; /* Prevents interference with clicks */
+    }
+
+    /* NAVBAR STYLING */
+    nav.navbar-bg {
+        background: rgba(5, 5, 5, 0.85);
+        border-bottom: 1px solid var(--border-color);
+        backdrop-filter: blur(12px);
+        transition: all 0.4s ease;
+    }
+
+    body.light-mode nav.navbar-bg {
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    /* GLOWING TEXT EFFECT */
+    .danger-text {
+        color: var(--accent);
+        text-shadow: 0 0 15px var(--accent-glow);
+    }
+
+    /* RUN ASSESSMENT BUTTON */
+    .btn-danger-glow {
+        background: linear-gradient(135deg, #991b1b 0%, var(--accent) 100%);
+        color: white;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 0 20px var(--accent-glow);
+        transition: all 0.3s ease;
+        white-space: nowrap; /* Keeps text on one line */
+    }
+
+    .btn-danger-glow:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 30px var(--accent);
+    }
+
+    /* SCROLLBAR CUSTOMIZATION */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); }
+    ::-webkit-scrollbar-thumb { background: rgba(239, 68, 68, 0.4); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+    /* -------------------------
+       MOBILE RESPONSIVENESS
+    ------------------------- */
+    @media (max-width: 768px) {
+        /* Fix the header button size on mobile */
+        .btn-danger-glow {
+            font-size: 0.75rem; /* Smaller text */
+            padding: 0.5rem 1rem; /* Smaller padding */
+            box-shadow: 0 0 10px var(--accent-glow); /* Reduce glow radius */
+            letter-spacing: 0.5px;
+        }
+
+        /* Adjust logo size */
+        .text-2xl {
+            font-size: 1.25rem; /* Equivalent to text-xl */
+        }
+        
+        /* Ensure dropdowns don't overflow */
+        select {
+            max-width: 100px;
+            font-size: 0.75rem;
+        }
+
+        /* Fix workspace height */
+        #colLeft, #colRight {
+            height: auto;
+            min-height: 50vh;
+        }
+    }
